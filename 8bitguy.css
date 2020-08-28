@@ -1,0 +1,114 @@
+body{
+	font-family: helvetica, arial;
+	background-color: #dddddd;
+}
+
+#container{
+	width: 90%;
+	margin: auto;
+}
+
+header{
+	padding: 20px 20px 10px;
+	background-color: black;
+}
+
+nav ul{
+	display: flex;
+	justify-content: space-between;
+	font-weight: bold;
+	list-style-type: none;
+	padding: 0;
+}
+
+nav a{
+	color: #a1a1a1;
+	text-decoration: none;
+}
+
+nav ul li{
+	padding: 10px;
+}
+
+nav ul li:hover{
+	background-color:#3a3a3a;
+}
+
+.dropdown{
+	display: none;
+	position: absolute;
+	background-color: black;
+}
+
+nav ul li:hover > .dropdown{
+	display: block;
+}
+
+aside{
+	width: 30%;
+	float: right;
+	box-sizing: border-box;
+}
+
+section{
+	width: 70%;
+	float: left;
+	box-sizing: border-box;
+}
+
+article{	
+	padding: 20px;
+	background-color: white;
+}
+
+.button{
+	padding: 10px;
+	background-color: #d4d4d4;
+	font-weight: bold; 
+	border-radius: 8px;
+	border: none; 
+}
+
+.button:hover{
+	background-color: #bfbfbf;
+}
+
+footer{
+	width: 100%;
+	padding: 20px;
+	background-color: #00354f;
+	color: white;
+	clear: both;
+	box-sizing: border-box;
+}
+
+article img{
+	width: 100%;
+	height: auto;
+}
+
+.input{
+	width: 100%;
+	border: 2px solid #bfbfbf;
+	border-radius: 2px;
+}
+
+textarea{
+	font-family: helvetica, arial;
+	resize: none;
+	height: 150px;
+}
+
+@media screen and (max-width: 800px){
+	section{
+		width: 100%;
+	}
+	
+	aside{
+		width: 100%;
+	}
+	
+	nav ul{
+		flex-direction: column;
+	}
+}
