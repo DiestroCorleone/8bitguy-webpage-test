@@ -61,6 +61,16 @@ article{
 	background-color: white;
 }
 
+#youtubeDiv{
+	background-color: white;
+	padding: 10px;
+}
+
+.video{
+	width: 100%;
+	border: 2px solid #b31217;
+}
+
 .button{
 	padding: 10px;
 	background-color: #d4d4d4;
