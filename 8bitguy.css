@@ -26,6 +26,15 @@ nav a{
 	text-decoration: none;
 }
 
+nav li:first-of-type, nav li:nth-child(2){
+	display: none; 
+}
+
+.menuIcon{
+	font-weight: bold;
+	font-size: 2rem;
+}
+
 nav ul li{
 	padding: 10px;
 }
@@ -118,7 +127,27 @@ textarea{
 		width: 100%;
 	}
 	
-	nav ul{
+	/*Acá comienza la magia*/
+	nav:not(:target) li:first-of-type{
+		display: inherit
+	}
+	
+	nav:not(:target) li{
+		display: none;
+	}
+	
+	nav:target li{
+		display: inherit;
+	}
+	
+	nav:target li:first-of-type{
+		display: none;
+	}
+	/*Acá termina la magia*/
+	
+	nav ul{		
+		display: flex;
 		flex-direction: column;
 	}
+
 }
